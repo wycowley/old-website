@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="logo.gif">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+	<title>About</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="slideshow.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<div id="header" class="whiteBackground">
+		<ul>
+			<img src="logo.gif" id= "logo">
+			<li id="name">Wyatt Cowley</li>
+			 <a href="index.html"><li class="shade">Home</li></a>
+			<li >About Me</li>
+			<a href="resume.html"><li class="shade">Resume</li></a>
+            <a href=contact.html><li  id="contact" class="shade">Contact
+			</li></a>
+		</ul>
+	</div>
+    <h1 class="welcome" style="width:67.5%; margin-left:16.25%"> About Me</h1>
+    <br>
+    <div id="fadeInText">
+        <h2 class="whiteBackground" id="text1"> I am a 15 year old that is going to be a sophomore in high school this next year.  I have one brother and one sister, and an adorable cairn terrier named Kody.
+        You can see my siblings' websites at 
+            <a href="https://www.cyruscowley.com" style="color: cadetblue" target="_blank">cyruscowley.com</a> and <a href="https://www.tessacowley.com" style="color: cadetblue" target="_blank">tessacowley.com</a>.
+                                                                                                 
+        </h2>
+        <button id="imageButton" onclick="PreviousSlideF()"><img src="arrow.png" id="arrow"></button>
+        <img src="siblings.jpg" id="imageFamily">
+        <button id="imageButton" onclick="NextSlideF()"><img src="arrow.png" id="arrow" style="transform:scaleX(1)"></button>
+    </div>
+    <br><br><br><br><br><br>
+    <div style="margin-top: 20%;" id="fadeInText2">
+        <h2 class="whiteBackground" id="text2" style="margin-right: 13.5%">
+            Some of my hobbies include reading, boating, and climbing.  My favorite author is Brandon Sanderson, and my favorite book from him is Mistborn.  Our family owns a boat, and we often go wakeboarding, wakesurfing, and tubing with it.  My favorite activities are always some sort of adventure - like climbing Mount Shasta or exploring a cave.
+        </h2>
+        <button id="imageButton" onclick="PreviousSlideI()" style="float: right; margin-right: 2.5%"><img src="arrow.png" id="arrow" style="transform:scaleX(1)"></button>
+        <img src="Tubing.jpg" id="imageInterests">
+        <button id="imageButton" onclick="NextSlideI()" style="float: right;"><img src="arrow.png" id="arrow"></button>
+    </div>
+    <br><br><br><br><br><br>
+    <div style="margin-top: 20%" id="fadeInText3">
+        <h2 id="text3" class="whiteBackground"> After school, I teach piano to children 5 to 12 years old at <a href="https://www.peeryacademy.com/" style="color: cadetblue" target="_blank">Peery Piano Academy</a>.  I am an Eagle Scout, and a member of the Church of Jesus Christ of Latter-Day Saints.  I am also a member of my school's waterpolo and swim teams during the fall and spring.  </h2>
+        
+        <button id="imageButton" onclick="PreviousSlideE()"><img src="arrow.png" id="arrow"></button>
+        <img src="piano.jpg" id="imageExtracurriculers">
+        <button id="imageButton" onclick="NextSlideE()"><img src="arrow.png" id="arrow" style="transform:scaleX(1)"></button>
+
+    </div>
+    <br>
+    
+    <h2 id="atend"> </h2>
+</body>

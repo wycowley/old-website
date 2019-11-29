@@ -1,0 +1,371 @@
+@media only screen and (max-width: 1050px){
+    .welcome{
+        margin-top: 15% !important;
+    }
+    #logo{
+        margin-top: 1% !important;
+    }
+    body{
+        font-size: smaller;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /*For the HEADER ONLY */
+    #contact{
+        margin-left: 20% !important;
+    }
+    #header{
+        font-size: 50% !important;
+        border-radius: 5px 5px !important;
+        padding-bottom: 1% !important;
+        width: 99% !important;
+    }
+    .welcome{
+        margin-top: 20% !important;
+        width: 85% !important;
+        margin-left: 6.5% !important;
+        margin-bottom: 1%;
+    }
+    #logo{
+        width: 5% !important;
+        margin-top: 1% !important;
+    }
+    #name{
+        width: 15% !important;
+    }
+    
+    /* For the About Page ONLY */    
+    #text1{
+        width: 85% !important;
+        float: none !important;
+        font-size: 75% !important;
+        margin-left: 6.5% !important;
+        margin-top: 0% !important;
+    }
+    #text2{
+        width: 85% !important;
+        float: none !important;
+        font-size: 75% !important;
+        margin-top: 50% !important;
+        margin-left: 6.5% !important;
+
+    }
+    #text3{
+        width: 85% !important;
+        float: none !important;
+        font-size: 75% !important;
+        margin-left: 6.5% !important;
+        margin-top: 50% !important;
+    }
+    #imageFamily{
+        width: 80% !important;
+    }
+    #imageInterests{
+        width: 80% !important;
+    }
+    #imageExtracurriculers{
+        width: 80% !important;
+    }
+    #imageButton{
+        margin-left: 3.5% !important;
+        margin-right: 3.5% !important;
+        margin-top: 25% !important;
+    }
+    #atend{
+        margin-top: 55% !important;
+    }
+    /*This is for the home page */
+    #text{
+        width: 85% !important;
+        margin-left: 6% !important;
+        font-size: 50% !important;
+        padding: 1% !important;
+    }
+    #Image{
+        float:none !important;
+        margin-top: 5% !important;
+        width: 87% !important;
+        margin-left: 6% !important;
+        margin-right: 0% !important;
+    }
+    #othertextS{
+        margin: 0% !important;
+        padding: 1%;
+    }
+    /* For CONTACT ONLY */
+    #form{
+        width: 83% !important;
+        margin-left: 7% !important;
+        margin-top: 8% !important;
+    }
+    form{
+        width: 98% !important;
+        padding: 3% !important;
+    }
+    
+    
+}
+
+
+
+/* li is for list, and is used for header */
+li{
+
+	font-size: 100%;
+}
+/* image for home page */
+#Image{
+	width: 25%;
+	float: right;
+	padding: 0%;
+    margin-right: 23%;
+    margin-top: .5%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+
+}
+#diffBackground{
+	width: 20%;
+	padding: 2%;
+	float: right;
+	margin-right: 23%;
+	margin-top: 2%;
+}
+/* text for most stuff*/
+body{
+    background-image: url("topography.png");
+    font-family: 'Nanum Gothic', sans-serif;
+
+    color : black;
+    margin: 0;
+    height: 0;
+}
+/* header*/
+.shade{
+	box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0);
+	margin-left: 0%;
+	padding-top: 3%;
+	border-radius: 5px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#header{
+	position: fixed;
+	width: 99%;
+	color: rgb(150,150,150);
+	top: .58%;
+	right: .5%;
+	left: .5%;
+	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+#header ul li{
+	display: inline;
+	width: 10%;
+	float: left;
+	text-align: center;
+	padding-top: 1.0;
+	padding: 1%;
+	margin-bottom: 1.1%;
+}
+#header ul li:first-child{
+	color: rgb(0,0,0);
+}
+
+.shade:hover {
+	background-color:whitesmoke;
+}
+/* overall white rimming around stuff */
+.whiteBackground{
+	background: rgb(255,255,255);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
+/* this is for my name in the header*/
+#name{
+	color: black;
+}
+/* this is for logo in the header*/
+
+#logo {
+	float: left;
+	width: 3%;
+	padding-left: 2%;
+	margin-bottom:0%;
+	padding-top: .1%;
+}
+
+/* following things are for text*/
+
+
+#text{
+	margin-left: 25%;
+	margin-top: 2%;
+	width: 20%;
+	margin-right: 4%;
+	padding:2%;
+	font-size: 100%;
+	margin-bottom: 0%;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+#gmailtext{
+	float: center;
+	margin-left: 17%;
+	font-size: 175%
+}
+
+        
+#contact {
+	margin-left: 30%;
+}
+
+
+/* for welcome text */
+.welcome {
+	margin-top: 8%;
+	width: 67.5%;
+	background: rgb(255,255,255);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	margin-left: 16.25%;
+	padding: 1%;
+	text-align: center;
+}
+/* id for the form */
+#form{
+    margin-top: 2.5%;
+    margin-left: 15.5%;
+}
+#formpart{
+    width: 97%;
+    font-size: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    
+}
+#formpart:hover{
+    background-color: white;
+}
+
+form{
+    width: 80%;
+    background-color: white;
+    padding: 2%;
+    border-radius: 5px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+
+}
+label{
+    margin-bottom: 15%;
+}
+
+textarea{
+    width: 97%;
+    height: 25%;
+    font-size: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+textarea:hover{
+    background-color: white;
+}
+/*id for the about me*/
+
+#shastaimg{
+    width: 30%;
+    transform: scaleX(-1) scaleY(-1);
+    float: left;
+    border-radius: 5px;
+}
+#text1{
+    width: 30%;
+    margin-left: 17%;
+    float: left;
+    padding: 1%;
+    margin-top: 5%;
+}
+#imageFamily{
+    float:left; 
+    border-radius: 5px; 
+    width: 30%; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+#imageButton{
+    float:left;
+    margin: 1.5%;
+    margin-top: 10%;
+    width: 3%;
+    background-color:transparent;
+    border-color: transparent;
+    padding: 0%;
+    outline:none;
+    
+}
+#arrow{
+    width: 65%; 
+    transform: scaleX(-1);
+    -webkit-transition: width .5s; /* Safari prior 6.1 */;
+    transition: width .5s;
+}
+#arrow:hover{
+    width: 75%;
+}
+
+#imageInterests{
+    float: right;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#text2{
+    width: 30%;
+    float: right;
+    padding: 1%;
+}
+.flip{
+    transform: scaleY(-1);
+}
+#imageExtracurriculers{
+    float:left; 
+    border-radius: 5px; 
+    width: 30%; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+#text3{
+    width: 30%;
+    margin-left: 17%;
+    float: left;
+    padding: 1%;
+    margin-top: 4%;
+}
+#atend{
+    margin-top: 30%; 
+    width: 50%; 
+    margin-left: 25%; 
+    padding: 1%; 
+    text-align: center
+}
+*:focus {
+    outline: none;
+}
+#fadeInText{
+	opacity: 0;
+}
+#fadeInText2{
+	opacity: 0;
+}
+#fadeInText3{
+	opacity: 0;
+}
+
