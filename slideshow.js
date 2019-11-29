@@ -4,7 +4,12 @@ setInterval(checkScroll,20);
 
 function checkScroll(){
 	scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-	//Enter in the boundaries you want for the scrolling, and enter in the ID
+    //Enter in the boundaries you want for the scrolling, and enter in the ID
+    if(width<1050 && width>600){
+        document.getElementById("fadeInText2").style.opacity = 1;
+        document.getElementById("fadeInText3").style.opacity = 1;
+        document.getElementById("fadeInText").style.opacity = 1;
+    }
 	if(scrollTop>=125 && document.getElementById("fadeInText2").style.opacity == 0){
 		x = 0;
 		//First paramater needs to be name of id, second one is the name of the variable setInterval is set = to
@@ -15,15 +20,10 @@ function checkScroll(){
 		//First paramater needs to be name of id, second one is the name of the variable setInterval is set = to
 		var fadeInText3 = setInterval(function() {fadeIn("fadeInText3", fadeInText3);},50);
 	}
-	if(scrollTop>=0 && document.getElementById("fadeInText").style.opacity == 0  && !width<1050 && !width>600){
+	if(scrollTop>=0 && document.getElementById("fadeInText").style.opacity == 0){
 		x = 0;
 		//First paramater needs to be name of id, second one is the name of the variable setInterval is set = to
 		var fadeInText = setInterval(function() {fadeIn("fadeInText", fadeInText);},50);
-    }
-    if(width<1050 && width>600){
-        document.getElementById("fadeInText2").style.opacity = 1;
-        document.getElementById("fadeInText3").style.opacity = 1;
-        document.getElementById("fadeInText").style.opacity = 1;
     }
 	
 	
