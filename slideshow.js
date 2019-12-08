@@ -1,5 +1,13 @@
 var scrollTop = 0;
 var width = screen.width;
+
+var slideFamily = ["family.jpg","kody.JPG","siblings.jpg"];
+var slideInterests = ["caving.jpg", "shasta.jpg", "tubing.jpg"];
+var slideExtra = ["temple.jpg","piano.jpg","waterpolo.jpg"];
+var f = 0;
+var i = 0;
+var e = 0;
+
 setInterval(checkScroll,20);
 
 function checkScroll(){
@@ -44,92 +52,35 @@ function checkScroll(){
 
 
 function PreviousSlideF(){
-    var slidenum1 = document.getElementById("imageFamily").src;
-    if (slidenum1 == "file:///Users/wycowley/Documents/WyattWebsite/siblings.jpg"){
-        document.getElementById("imageFamily").src = "family.jpg"
-    } 
-    if (slidenum1 == "file:///Users/wycowley/Documents/WyattWebsite/family.jpg"){
-        document.getElementById("imageFamily").src = "kody.JPG"
-    }''
-    if (slidenum1 == "file:///Users/wycowley/Documents/WyattWebsite/kody.JPG"){
-        document.getElementById("imageFamily").src = "siblings.jpg"
-    }
+    f+=2;
+    f=f%3;
+    document.getElementById("imageFamily").src = slideFamily[f];
 }
 function NextSlideF(){
-    var slidenum1 = document.getElementById("imageFamily").src;
-    if (slidenum1 == "file:///Users/wycowley/Documents/WyattWebsite/siblings.jpg"){
-        document.getElementById("imageFamily").src = "kody.JPG"
-    }
-    if (slidenum1 == "file:///Users/wycowley/Documents/WyattWebsite/family.jpg"){
-        document.getElementById("imageFamily").src = "siblings.jpg"
-    }
-    if (slidenum1 == "file:///Users/wycowley/Documents/WyattWebsite/kody.JPG"){
-        document.getElementById("imageFamily").src = "family.jpg"
-    }
+    f+=1;
+    f=f%3;
+    document.getElementById("imageFamily").src = slideFamily[f];
 }
 
 
 
 function PreviousSlideI(){
-    
-    var slidenum2 = document.getElementById("imageInterests").src;
-    if (slidenum2 == "file:///Users/wycowley/Documents/WyattWebsite/Tubing.jpg"){
-        document.getElementById("imageInterests").src = "caving.jpg"
-        document.getElementById("imageInterests").style =  "transform: scaleY(1) scaleX(1)"
-    } 
-    if (slidenum2 == "file:///Users/wycowley/Documents/WyattWebsite/caving.jpg"){
-        document.getElementById("imageInterests").src = "shasta.jpg"
-        document.getElementById("imageInterests").style =  "transform: scaleY(1) scaleX(1)"
-    }
-    if (slidenum2 == "file:///Users/wycowley/Documents/WyattWebsite/shasta.jpg"){
-        document.getElementById("imageInterests").src = "Tubing.jpg"
-        document.getElementById("imageInterests").style =  "transform: scaleY(1) scaleX(1)"
-        
-    }
+    i+=2;
+    i=i%3;
+    document.getElementById("imageInterests").src = slideInterests[i];
 }
 function NextSlideI(){
-    
-    var slidenum2 = document.getElementById("imageInterests").src;
-    if (slidenum2 == "file:///Users/wycowley/Documents/WyattWebsite/Tubing.jpg"){
-        document.getElementById("imageInterests").style = "transform: scaleY(-1) scaleX(-1)"
-        document.getElementById("imageInterests").src = "shasta.jpg"
-    } 
-    if (slidenum2 == "file:///Users/wycowley/Documents/WyattWebsite/caving.jpg"){
-        document.getElementById("imageInterests").src = "Tubing.jpg"
-        document.getElementById("imageInterests").style =  "transform: scaleY(1) scaleX(1)"
-    }
-    if (slidenum2 == "file:///Users/wycowley/Documents/WyattWebsite/shasta.jpg"){
-        document.getElementById("imageInterests").src = "caving.jpg"
-        document.getElementById("imageInterests").style =  "transform: scaleY(1) scaleX(1)"
-    }
+    i+=1;
+    i=i%3;
+    document.getElementById("imageInterests").src = slideInterests[i];
 }
 function PreviousSlideE(){
-    
-    var slidenum3 = document.getElementById("imageExtracurriculers").src;
-    
-    if (slidenum3 == "file:///Users/wycowley/Documents/WyattWebsite/piano.jpg"){
-        document.getElementById("imageExtracurriculers").src = "waterpolo.jpg"
-    } 
-    if (slidenum3 == "file:///Users/wycowley/Documents/WyattWebsite/waterpolo.jpg"){
-        document.getElementById("imageExtracurriculers").src = "temple.jpg"
-    }
-    if (slidenum3 == "file:///Users/wycowley/Documents/WyattWebsite/temple.jpg"){
-        document.getElementById("imageExtracurriculers").src = "piano.jpg"
-        
-    }
+    e+=2;
+    e=e%3;
+    document.getElementById("imageExtracurriculers").src = slideExtra[e];
 }
 function NextSlideE(){
-    
-    var slidenum3 = document.getElementById("imageExtracurriculers").src;
-    
-    if (slidenum3 == "file:///Users/wycowley/Documents/WyattWebsite/piano.jpg"){
-        document.getElementById("imageExtracurriculers").src = "temple.jpg"
-    } 
-    if (slidenum3 == "file:///Users/wycowley/Documents/WyattWebsite/waterpolo.jpg"){
-        document.getElementById("imageExtracurriculers").src = "piano.jpg"
-    }
-    if (slidenum3 == "file:///Users/wycowley/Documents/WyattWebsite/temple.jpg"){
-        document.getElementById("imageExtracurriculers").src = "waterpolo.jpg"
-        
-    }
+    e+=1;
+    e=e%3;
+    document.getElementById("imageExtracurriculers").src = slideExtra[e];
 }
