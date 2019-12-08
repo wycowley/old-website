@@ -2,7 +2,7 @@ var scrollTop = 0;
 var width = screen.width;
 
 var slideFamily = ["family.jpg","kody.JPG","siblings.jpg"];
-var slideInterests = ["caving.jpg", "shasta.jpg", "tubing.jpg"];
+var slideInterests = ["caving.jpg", "shasta.jpg", "Tubing.jpg"];
 var slideExtra = ["temple.jpg","piano.jpg","waterpolo.jpg"];
 var f = 0;
 var i = 0;
