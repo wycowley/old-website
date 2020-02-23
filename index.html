@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/main_logo.gif">
+
+	<title>Wyatt Cowley's Website</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="animations.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”Description” content="Wyatt Cowley's resume, work experience, and contact info.">
+</head>      
+<body onload="doStuff()">
+    <!-- title bar -->
+    <div id="titleBar">
+        <button onclick="showMenu()" id="menuIcon"><div style=""><img src="Images/menu.png" style="width: 100%; float: left;"></div></button>
+        <div id="titleLogo"><img src="Images/main_logo.gif" style="width: 100%;"></div>
+        <div>
+            <a href="#home"><h2 class="bars" id="bar1">Wyatt Cowley</h2></a>
+            <a href="#aboutMe"><h2 class="bars" id="bar2">About</h2></a>
+            <a href="#Projects"><h2 class="bars" id="bar3">Projects</h2></a>
+            <a href="#contact"><h2 class="bars" id="bar4">Contact</h2></a>
+
+        </div>
+    </div>
+    <a name="home" style="position: absolute;"></a>
+    
+    <img id="slide1" class="goneSlides" src="Images/familyHonduras.jpg" >
+    <img id="slide2" class="goneSlides" src="Images/randomKody.jpg" style="transform: scaleX(-1) scaleY(-1);">
+    <img id="slide3" class="slides" src="Images/wyattPic.jpg" >
+    <div id="autograph">
+        <h1 style="font-size: 100px;text-align: center;margin-bottom: 0%;">Wyatt Cowley</h1>
+        <h1 id="class">Welcome</h1>
+        <a href="#aboutMe" style="margin-left: 45%;"><img src="Images/chevron.png" id="introDownArrow"></a>
+    </div>
+    
+    <div style="height: 90vh;"><br></div>
+    <a name="aboutMe"></a>
+    <div style="height: 10vh;"><br></div>
+
+    <div id="welcome">
+        <div id="welcomeTextDiv">
+            <p id="welcomeText">My name is Wyatt Cowley.  I am a sophomore in high school.  In this website, you can find information about me, some of the projects I have done, my resume, and a way to contact me.<br><br>I have two siblings, <a href="https://www.cyruscowley.com" style="color: darkslategrey" target="_blank">Cyrus</a> and <a href="https://www.tessacowley.com" style="color:darkslategrey;" target=_blank>Tessa</a>, my dog Kody, and my parents in my family.</p>
+        </div>
+        <div id="slideshowWelcome">
+            <img src="Images/welcome1.jpg" class="fadeIn Slide" id="welcome1">
+            <img src="Images/welcome2.jpg" class="fadeOut Slide" id="welcome2">
+            <img src="Images/welcome3.jpg" class="fadeOut Slide" id="welcome3">
+            <button onclick="Down('welcome')"><img src="Images/arrow.png" class="previousArrow" style="transform: scaleX(-1);"></button>
+            <button class="test" onclick="Up('welcome')"><img src="Images/arrow.png" class="nextArrow"></button>
+
+        </div>
+    </div>
+    <div id="hobby">
+        <div id="hobbyTextDiv"><p id="hobbyText">Some of my hobbies include wakeboarding, reading, and playing with my dog.<br><br>My favorite activities are always some sort of adventure - like rowing a Venetian rowboat or climbing Mount Shasta.</p></div>
+        <div id="slideshowHobby">
+            <img src="Images/hobby1.jpg" class="fadeIn Slide" id="hobby1">
+            <img src="Images/hobby2.jpg" class="fadeOut Slide" id="hobby2">
+            <img src="Images/hobby3.jpg" class="fadeOut Slide" id="hobby3">
+            <button onclick="Down('hobby')"><img src="Images/arrow.png" class="previousArrow" style="transform: scaleX(-1);"></button>
+            <button class="test" onclick="Up('hobby')"><img src="Images/arrow.png" class="nextArrow"></button>
+
+        </div>
+    </div>
+    <div id="welcome">
+        <div id="welcomeTextDiv"><p id="welcomeText">At my school I play Water Polo and Swimming. This year I was the captain of the JV Water Polo team.<br><br>I work at <a href="https://www.peeryacademy.com/" target=_blank style="color: darkslategray;">Peery Piano Academy</a> as one of their Lead Guides.  I have played piano for 9 years and have performed pieces such as Sonate Pathetique and Aufschwung. <br><br>I am an Eagle Scout and a member of the Church of Jesus Christ of Latter Day Saints.</p></div>
+        <div id="slideshowWelcome">
+            <img src="Images/career1.jpg" class="fadeIn Slide" id="career1">
+            <img src="Images/career2.jpg" class="fadeOut Slide" id="career2">
+            <img src="Images/career3.jpg" class="fadeOut Slide" id="career3">
+            <button onclick="Down('career')"><img src="Images/arrow.png" class="previousArrow" style="transform: scaleX(-1);"></button>
+            <button class="test" onclick="Up('career')"><img src="Images/arrow.png" class="nextArrow"></button>
+
+        </div>
+    </div>
+    <a name="Projects"></a>
+    <br><br><br>
+    <a href="resume.pdf" target="_blank" style="text-decoration: none; position: absolute;" id="fancyButton"><div><h1 class="fancyButtonText"><span id="M">M</span><span id="y">y</span><span id="space"> </span><span id="R">R</span><span id="e1">e</span><span id="s">s</span ><span id="u">u</span><span id="m">m</span><span id="e2">e</span> </h1></div></a>
+    <div style="height: 20vh;" id="difference"></div>
+    <br><br><br>
+    <div id="projectsDiv">
+        <div style="float: left;width: 35%" id="selectionDiv">
+            <div style="padding: 2%; padding-left: 4%; " class="forhover"><p class="projectButton">Projects</p></div>
+            <div onclick="showProject('snake')" style="padding: 2%; padding-left: 4%; background-color: rgb(220,220,220);" id="snakeButton" class="forhover"><p class="projectButton">Snake (against AI)</p></div>
+            <div style="padding: 2%; padding-left: 4%; " id="sudokuButton" onclick="showProject('sudoku')" class="forhover"><p class="projectButton">Sudoku Solver</p></div>
+            <div style="padding: 2%; padding-left: 4%; " id="javaButton" onclick="showProject('java')" class="forhover"><p class="projectButton">How to Run Java</p></div>
+
+        </div>
+        <div style="float: left; width: 65%;background-color: rgb(220,220,220);" id="projectDiv">
+        
+        </div>
+    </div>
+    <div style="height: 78vh;" id="distance"><br></div>
+    <a name="contact"></a>
+    <div id="formDiv">
+        <form action="https://formspree.io/wycowley@gmail.com" method="post" id="form">
+            <h1 style="text-align: center;padding-top: 5%;">Contact Me</h1>
+            <label>Name:</label><br>
+            <input type="text" name="name" placeholder="Your name"><br>
+            <label>Email:</label><br>
+            <input type="email" name="email" placeholder="email@domain.com"><br>
+            <label>Message:</label><br>
+            <textarea placeholder="Write your message here" rows="4" name="message"></textarea>
+            <br>
+            <input type="submit" value="Send" id="formpart" name="submit" style="width: 100%;"><br>
+        </form>
+    </div>
+    <div style="width: 99.5%;padding: .25%;"><p style="margin-left: 1%;">Coded by Wyatt Cowley</p></div>
+
+
+</body>
+</html>
