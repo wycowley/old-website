@@ -364,7 +364,7 @@ input{
     margin-left: 1%;
 }
 .Slide{
-    width: 50vw;
+    width: 50%;
     height: 50vh;
     position: absolute;
     object-fit: cover;
