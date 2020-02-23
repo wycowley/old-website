@@ -4,7 +4,8 @@ var d = 1;
 var stuff = true;
 function doStuff(){
     snakeProject(document.getElementById('projectDiv'))
-    document.getElementById("containerForArrow").style.top = 85+"vh"
+    document.getElementById("containerForArrow").style.top = 85+"vh";
+    document.getElementById("containerForArrow").style.marginLeft = 50-(100/window.innerWidth*100/2)+"%";
 }
 
 
