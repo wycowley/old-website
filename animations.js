@@ -4,10 +4,11 @@ var d = 1;
 var stuff = true;
 function doStuff(){
     snakeProject(document.getElementById('projectDiv'))
-    
+    document.getElementById("containerForArrow").style.top = 85+"vh"
 }
+
+
 function showMenu(){
-    console.log(parseFloat(window.innerWidth));
     if(parseFloat(window.innerWidth)<600 && stuff == true){
         // var stuff = 
         document.getElementById("bar1").className = "bars2"
@@ -27,24 +28,19 @@ function showMenu(){
 }
 function change(){
     // window.alert(window.innerWidth);
-    // console.log(parseFloat(window.innerWidth));
 
     if(parseFloat(window.innerWidth)>1100){
-        console.log("hello");
         if(document.getElementById("slide3").className == "appear slides" || document.getElementById("slide3").className == "slides"){
-            console.log("test");
             document.getElementById("slide3").className = "disappear slides";
             document.getElementById("slide1").className = "appear slides";
             document.getElementById("slide2").className = "nothing slides";
     
         }else if(document.getElementById("slide2").className == "appear slides"){
-            console.log("test");
             document.getElementById("slide2").className = "disappear slides";
             document.getElementById("slide3").className = "appear slides";
             document.getElementById("slide1").className = "nothing slides";
     
         }else if(document.getElementById("slide1").className == "appear slides"){
-            console.log("test");
             document.getElementById("slide1").className = "disappear slides";
             document.getElementById("slide2").className = "appear slides";
             document.getElementById("slide3").className = "nothing slides";
@@ -78,17 +74,14 @@ function showProject(x){
 function Up(x){
     console.log(document.getElementById(x+"1").className);
     if(document.getElementById(x+"3").className == "fadeIn "+"Slide" || document.getElementById(x+"3").className == "Slide"){
-        console.log("test");
         document.getElementById(x+"3").className = "fadeOut "+"Slide";
         document.getElementById(x+"1").className = "fadeIn "+"Slide";
         document.getElementById(x+"2").className = "fadeOut "+"Slide";
 
     }else if(document.getElementById(x+"2").className == "fadeIn "+"Slide"){
-        console.log("test");
         document.getElementById(x+"2").className = "fadeOut "+"Slide";
         document.getElementById(x+"3").className = "fadeIn "+"Slide";
     }else if(document.getElementById(x+"1").className == "fadeIn "+"Slide"){
-        console.log("test");
         document.getElementById(x+"1").className = "fadeOut "+"Slide";
         document.getElementById(x+"2").className = "fadeIn "+"Slide";
     }
@@ -96,17 +89,14 @@ function Up(x){
 function Down(x){
     console.log(document.getElementById(x+"1").className);
     if(document.getElementById(x+"3").className == "fadeIn "+"Slide" || document.getElementById(x+"3").className == "Slide"){
-        console.log("test");
         document.getElementById(x+"3").className = "fadeOut "+"Slide";
         document.getElementById(x+"2").className = "fadeIn "+"Slide";
         document.getElementById(x+"1").className = "fadeOut "+"Slide";
 
     }else if(document.getElementById(x+"2").className == "fadeIn "+"Slide"){
-        console.log("test");
         document.getElementById(x+"2").className = "fadeOut "+"Slide";
         document.getElementById(x+"1").className = "fadeIn "+"Slide";
     }else if(document.getElementById(x+"1").className == "fadeIn "+"Slide"){
-        console.log("test");
         document.getElementById(x+"1").className = "fadeOut "+"Slide";
         document.getElementById(x+"3").className = "fadeIn "+"Slide";
     }

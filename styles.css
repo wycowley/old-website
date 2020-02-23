@@ -267,12 +267,12 @@ input{
     width: 100%;
 }
 #introDownArrow{
-    width: 10%;
+    width: 100px;
     margin-top: 0%;
     transition: margin-top 1s;
 }
 #introDownArrow:hover{
-    margin-top: 1%;
+    margin-top: 10%;
 }
 #class{
     font-size: 50px;
