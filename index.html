@@ -16,10 +16,10 @@
         <button onclick="showMenu()" id="menuIcon"><div style=""><img src="Images/menu.png" style="width: 100%; float: left;"></div></button>
         <div id="titleLogo"><img src="Images/main_logo.gif" style="width: 100%;"></div>
         <div>
-            <a href="#home"><h2 class="bars" id="bar1">Wyatt Cowley</h2></a>
-            <a href="#aboutMe"><h2 class="bars" id="bar2">About</h2></a>
-            <a href="#Projects"><h2 class="bars" id="bar3">Projects</h2></a>
-            <a href="#contact"><h2 class="bars" id="bar4">Contact</h2></a>
+            <a href="#home" onclick="showMenu()"><h2 class="bars" id="bar1">Wyatt Cowley</h2></a>
+            <a href="#aboutMe" onclick="showMenu()"><h2 class="bars" id="bar2">About</h2></a>
+            <a href="#Projects" onclick="showMenu()"><h2 class="bars" id="bar3">Projects</h2></a>
+            <a href="#contact" onclick="showMenu()"><h2 class="bars" id="bar4">Contact</h2></a>
 
         </div>
     </div>
@@ -79,8 +79,9 @@
     <div style="height: 20vh;" id="difference"></div>
     <br><br><br>
     <div id="projectsDiv">
+        <div style="padding: 0%; padding-left: 4%;" class="forhover"><p class="projectButton" style="margin: 3%;">Projects</p></div>
+
         <div style="float: left;width: 35%" id="selectionDiv">
-            <div style="padding: 2%; padding-left: 4%; " class="forhover"><p class="projectButton">Projects</p></div>
             <div onclick="showProject('snake')" style="padding: 2%; padding-left: 4%; background-color: rgb(220,220,220);" id="snakeButton" class="forhover"><p class="projectButton">Snake (against AI)</p></div>
             <div style="padding: 2%; padding-left: 4%; " id="sudokuButton" onclick="showProject('sudoku')" class="forhover"><p class="projectButton">Sudoku Solver</p></div>
             <div style="padding: 2%; padding-left: 4%; " id="javaButton" onclick="showProject('java')" class="forhover"><p class="projectButton">How to Run Java</p></div>
@@ -90,7 +91,7 @@
         
         </div>
     </div>
-    <div style="height: 78vh;" id="distance"><br></div>
+    <div style="height: 700px;" id="distance"><br></div>
     <a name="contact"></a>
     <div id="formDiv">
         <form action="https://formspree.io/wycowley@gmail.com" method="post" id="form">

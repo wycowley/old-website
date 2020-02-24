@@ -18,7 +18,7 @@
         width: 104% !important;
     } */
     #distance{
-        height: 44vh !important;
+        height: 550px !important;
     }
     #difference{
         height: 10vh !important;
@@ -35,7 +35,7 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 716px) {
     #menuIcon{
         opacity: 1 !important;
         padding: 9px !important;
@@ -113,7 +113,7 @@
         margin-left: 5% !important;
     }
     #distance{
-        height: 120vh !important;
+        height: 1000px !important;
     }
 }
 
@@ -198,12 +198,13 @@ input{
 }
 #formDiv{
     width: 100%;
-    background-color: rgb(103, 169, 172);
+    background-color: rgb(103, 169, 172); 
     padding-bottom: 5%;
 }
 #form{
     width: 40%;
     margin-left: 30%;
+    
 }
 
 
@@ -221,7 +222,7 @@ input{
     margin-left: 10%;
     width: 79.5%;
     padding: .25%;
-    background-color: rgb(235, 159, 146);
+    background-color: rgb(103, 169, 172); 
     border-radius: 10px 10px 10px;
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: all .5s;
