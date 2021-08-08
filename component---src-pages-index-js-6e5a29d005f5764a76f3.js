@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkwyatt_cowley_website=self.webpackChunkwyatt_cowley_website||[]).push([[678],{7704:function(e,t,u){u.r(t);var l=u(7294),n=u(8791);t.default=function(){return l.createElement(n.default,null)}}}]);
-//# sourceMappingURL=component---src-pages-index-js-6e5a29d005f5764a76f3.js.map
