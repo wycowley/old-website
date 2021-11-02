@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: 'Commissioner', sans-serif;
+  transition: all .5s;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

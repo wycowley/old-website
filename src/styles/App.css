@@ -1,0 +1,20 @@
+.App {
+  /* text-align: center; */
+  width: 100%;
+  /* overflow-x: hidden; Hide horizontal scrollbar */
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+#aboutMePosition{
+  position: relative;
+  top: -3vh;
+}
+#extraPositioning{
+  margin-top: 7.5vh;
+}
+.extraPositioning2{
+  height: 5vh;
+  background-image: linear-gradient(to bottom, #f6f6f6, #f8f8f8, #fafafa, #fdfdfd, #ffffff);  
+}
