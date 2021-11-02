@@ -6,37 +6,43 @@ const Slideshow = (props) => {
     const [firstY, setFirstY] = useState(0);
     const [secondY, setSecondY] = useState(0);
     const [thirdY, setThirdY] = useState(0);
+    console.log(firstY);
 
     useEffect(() => {
+        // window.setTimeout((e) => {
+        //     setFirstY(100);
+        // }, 0);
         setFirstY(100);
-        let thing = setInterval(switchThings, 2000);
+        setInterval(switchThings, 2000);
         // return clearInterval(thing);
     }, []);
-    function switchThings() {
-        console.log("CONSOLE");
+    const switchThings = () => {
+        // console.log("CONSOLE");
         if (firstY == 100) {
-            console.log("Second");
-
+            // console.log("Second");
+            // console.log(firstY, secondY, thirdY);
             setFirstY(0);
             setSecondY(100);
             setThirdY(0);
-            return;
+            // return;
         } else if (secondY == 100) {
-            console.log("Third");
+            // console.log("Third");
+            // console.log(firstY, secondY, thirdY);
 
             setFirstY(0);
             setSecondY(0);
             setThirdY(100);
-            return;
+            // return;
         } else {
-            console.log("First");
+            // console.log("First");
+            // console.log(firstY, secondY, thirdY);
 
             setFirstY(100);
             setSecondY(0);
             setThirdY(0);
-            return;
+            // return;
         }
-    }
+    };
     return (
         <div id='full-height full-width'>
             <motion.img src={array[0]} rel='preload' className={" full-width full-height openerSlide "} animate={{ height: firstY + "%" }} />
