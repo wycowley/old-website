@@ -1,0 +1,27 @@
+.filledCircle {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 0.5rem;
+    background: white;
+    position: absolute;
+    z-index: 4;
+    top: calc(100% - 2rem);
+}
+.transparentCircle {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    z-index: 4;
+    top: calc(100% - 2rem);
+}
+.first {
+    left: 1rem;
+}
+.second {
+    left: 2.25rem;
+}
+.third {
+    left: 3.5rem;
+}
