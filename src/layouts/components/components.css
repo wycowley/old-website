@@ -5,6 +5,8 @@
     background: white;
     position: absolute;
     z-index: 4;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+
     top: calc(100% - 2rem);
 }
 .transparentCircle {
@@ -12,9 +14,50 @@
     height: 0.75rem;
     border-radius: 0.5rem;
     background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
     position: absolute;
     z-index: 4;
     top: calc(100% - 2rem);
+}
+.ind-project-container {
+    width: 45%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.75rem;
+    transition: all 0.25s;
+    height: 3rem;
+    padding: 1.5%;
+    margin: 0.5%;
+    cursor: pointer;
+}
+/* .ind-project-container:hover {
+    height: 3.25rem;
+} */
+.ind-project-container p {
+    font-size: 1rem;
+}
+#grow {
+    height: 10rem;
+    /* max-height: auto; */
+}
+.always-visible-section {
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    height: 3rem;
+    /* padding: 1rem; */
+}
+.always-visible-section img {
+    height: 100%;
+}
+.always-visible-section h2 {
+    margin: 0px;
+    /* padding: 0.5rem; */
+    padding-left: 0.5rem;
+    font-size: 2rem;
+}
+.less {
+    top: calc(95% - 2rem);
 }
 .first {
     left: 1rem;
@@ -24,4 +67,13 @@
 }
 .third {
     left: 3.5rem;
+}
+.firstRight {
+    left: calc(100% - 4.5rem);
+}
+.secondRight {
+    left: calc(100% - 3.25rem);
+}
+.thirdRight {
+    left: calc(100% - 2rem);
 }

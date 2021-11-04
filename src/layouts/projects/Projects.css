@@ -1,0 +1,30 @@
+html {
+    --accent-bg-color: rgb(236, 236, 236);
+}
+.triangle-to-projects {
+    height: 5%;
+    width: 100%;
+    fill: var(--accent-bg-color);
+    position: relative;
+    top: calc(-5% + 1px);
+    /* background-color: white; */
+}
+.complete-project-container {
+    height: 100vh;
+    width: 100%;
+    margin-top: 10vh;
+    background-color: var(--accent-bg-color);
+}
+.project-containers {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project-title-container {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 2rem;
+}

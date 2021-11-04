@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import SlideshowPill from "./SlideshowPill";
+import sal from "sal.js";
+import "../sal.css";
+
 const Slideshow = (props) => {
     const [firstRotate, setFirstRotate] = useState(0);
     const [secondRotate, setSecondRotate] = useState(0);
@@ -9,6 +12,7 @@ const Slideshow = (props) => {
     const [pillArray, setPillArray] = useState(["white", "rgba(255, 255, 255, .5)", "rgba(255, 255, 255, .5)"]);
     useEffect(() => {
         console.log(firstRotate, secondRotate, thirdRotate);
+        sal();
     }, []);
     function shiftTransition() {
         console.log("Things are going down");
@@ -34,13 +38,14 @@ const Slideshow = (props) => {
     }
 
     return (
-        <div className='actual-img-container' onClick={shiftTransition}>
+        <div className='actual-img-container' onClick={shiftTransition} data-sal={props.special ? "none" : "slide-right"} data-sal-delay='0' data-sal-easing='ease'>
             <motion.img
                 src={props.array[0]}
                 className='slide-img'
                 animate={{
                     x: firstRotate + "%",
                 }}
+                initial={false}
                 transition={{
                     duration: 0.25,
                 }}
@@ -48,6 +53,7 @@ const Slideshow = (props) => {
             <motion.img
                 src={props.array[1]}
                 className='slide-img'
+                initial={false}
                 animate={{
                     x: secondRotate + "%",
                 }}
@@ -57,6 +63,7 @@ const Slideshow = (props) => {
                 style={{ zIndex: zIndexes[1] }}></motion.img>
             <motion.img
                 src={props.array[2]}
+                initial={false}
                 className='slide-img'
                 animate={{
                     x: thirdRotate + "%",
@@ -65,7 +72,7 @@ const Slideshow = (props) => {
                     duration: 0.25,
                 }}
                 style={{ zIndex: zIndexes[2] }}></motion.img>
-            <SlideshowPill array={pillArray}></SlideshowPill>
+            <SlideshowPill array={pillArray} special={props.special}></SlideshowPill>
         </div>
     );
 };

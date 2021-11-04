@@ -1,0 +1,63 @@
+label {
+    font-size: 25px;
+}
+textarea {
+    width: 98%;
+    border-radius: 5px 5px 5px;
+    font-size: 25px;
+    border: none;
+    padding: 1%;
+    margin-top: 2%;
+}
+.contactTitle {
+    font-size: 50px;
+}
+.triangle-to-contact {
+    height: 5%;
+    width: 100%;
+    fill: rgb(103, 169, 172);
+    position: relative;
+    top: calc(-5% + 1px);
+    /* background-color: white; */
+}
+.total-contact-div {
+    height: 100vh;
+    background-color: rgb(103, 169, 172);
+}
+.lowDisclaimer {
+    width: 99.5%;
+    padding: 0.25%;
+}
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(190, 190, 190);
+    font-family: "Commissioner", sans-serif;
+}
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(190, 190, 190);
+    font-family: "Commissioner", sans-serif;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgb(190, 190, 190);
+    font-family: "Commissioner", sans-serif;
+}
+input {
+    padding: 1%;
+    font-size: 25px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 5px 5px 5px;
+    width: 98%;
+    border: none;
+}
+.formDiv {
+    width: 100%;
+    padding-bottom: 5%;
+}
+form {
+    width: 60vw;
+    margin-left: 20vw;
+}
