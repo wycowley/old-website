@@ -24,3 +24,16 @@
     text-decoration: underline solid;
     text-decoration-color: var(--accent);
 }
+.no-flex {
+    display: block;
+    height: auto;
+}
+.full-width {
+    width: 85%;
+    margin-left: 7.5%;
+}
+.full-width-slideshow {
+    width: 85%;
+    margin-left: 7.5%;
+    height: 75vh;
+}

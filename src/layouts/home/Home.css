@@ -83,3 +83,15 @@
     fill: white;
     background-color: rgb(231, 106, 116);
 }
+.title-container-mobile {
+    height: auto;
+    color: black;
+    position: absolute;
+    left: 0%;
+    padding-left: 1rem;
+    top: calc(100% - 15rem);
+    z-index: 5;
+    color: white;
+    text-align: left;
+    display: flex;
+}

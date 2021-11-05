@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import SlideshowPill from "./SlideshowPill";
-import sal from "sal.js";
-import "../sal.css";
 
 const Slideshow = (props) => {
     const [firstRotate, setFirstRotate] = useState(0);
@@ -10,10 +8,6 @@ const Slideshow = (props) => {
     const [thirdRotate, setThirdRotate] = useState(-100);
     const [zIndexes, setZ] = useState([2, 1, 3]);
     const [pillArray, setPillArray] = useState(["white", "rgba(255, 255, 255, .5)", "rgba(255, 255, 255, .5)"]);
-    useEffect(() => {
-        console.log(firstRotate, secondRotate, thirdRotate);
-        sal();
-    }, []);
     function shiftTransition() {
         console.log("Things are going down");
         if (thirdRotate == -100) {
@@ -38,7 +32,7 @@ const Slideshow = (props) => {
     }
 
     return (
-        <div className='actual-img-container' onClick={shiftTransition} data-sal={props.special ? "none" : "slide-right"} data-sal-delay='0' data-sal-easing='ease'>
+        <div className='actual-img-container' onClick={shiftTransition}>
             <motion.img
                 src={props.array[0]}
                 className='slide-img'
