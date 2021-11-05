@@ -73,5 +73,13 @@
     top: 100%;
     height: calc(5% + 1px);
     z-index: 5;
+    fill: rgb(231, 106, 116);
+}
+.triangle-beneath2 {
+    position: absolute;
+    top: 105%;
+    height: calc(5% + 1px);
+    z-index: 5;
     fill: white;
+    background-color: rgb(231, 106, 116);
 }

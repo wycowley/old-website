@@ -19,3 +19,8 @@
     height: 100%;
     font-size: 1.5rem;
 }
+.link {
+    color: black;
+    text-decoration: underline solid;
+    text-decoration-color: var(--accent);
+}

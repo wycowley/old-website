@@ -1,63 +1,40 @@
-label {
-    font-size: 25px;
-}
-textarea {
-    width: 98%;
-    border-radius: 5px 5px 5px;
-    font-size: 25px;
-    border: none;
-    padding: 1%;
-    margin-top: 2%;
-}
-.contactTitle {
-    font-size: 50px;
-}
 .triangle-to-contact {
-    height: 5%;
+    height: 5vh;
     width: 100%;
-    fill: rgb(103, 169, 172);
+    fill: rgb(231, 106, 116);
+    z-index: 0;
+
     position: relative;
-    top: calc(-5% + 1px);
+    top: calc(-5vh + 1px);
     /* background-color: white; */
 }
 .total-contact-div {
-    height: 100vh;
-    background-color: rgb(103, 169, 172);
+    height: auto;
+    background-color: rgb(231, 106, 116);
 }
-.lowDisclaimer {
-    width: 99.5%;
-    padding: 0.25%;
+.icon-container {
+    width: 80%;
+    margin-left: 10%;
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
-::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgb(190, 190, 190);
-    font-family: "Commissioner", sans-serif;
-}
-:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: rgb(190, 190, 190);
-    font-family: "Commissioner", sans-serif;
+.icon-container svg {
+    width: 5rem;
+    height: 5rem;
+    fill: black;
+    transition: all 0.25s;
 }
 
-::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: rgb(190, 190, 190);
-    font-family: "Commissioner", sans-serif;
+.icon-container svg:hover {
+    width: 6rem;
+    height: 6rem;
 }
-input {
-    padding: 1%;
-    font-size: 25px;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    border-radius: 5px 5px 5px;
-    width: 98%;
-    border: none;
-}
-.formDiv {
-    width: 100%;
-    padding-bottom: 5%;
-}
-form {
-    width: 60vw;
-    margin-left: 20vw;
+.final-title {
+    margin-top: 5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    margin-bottom: 0px;
 }

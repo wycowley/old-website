@@ -1,34 +1,33 @@
 import "./Contact.css";
 import Triangle from "../components/Triangle.jsx";
+
+import { SiInstagram } from "react-icons/si";
+import { SiGithub } from "react-icons/si";
+import { MdOutlineMail } from "react-icons/md";
+
 const Contact = (props) => {
     return (
         <div className='total-contact-div'>
             <Triangle className='triangle-to-contact'></Triangle>
-
-            <div className='formDiv'>
-                <form action='https://formspree.io/wycowley@gmail.com' method='post' id='form'>
-                    <br />
-                    <br />
-                    <h1 className='contactTitle'>Contact Me</h1>
-                    <label>Name:</label>
-                    <br />
-                    <input type='text' name='name' placeholder='Your name' />
-                    <br />
-                    <label>Email:</label>
-                    <br />
-                    <input type='email' name='email' placeholder='email@domain.com' />
-                    <br />
-                    <label>Message:</label>
-                    <br />
-                    <textarea placeholder='Write your message here' rows='4' name='message'></textarea>
-                    <br />
-                    <input type='submit' value='Send' id='formpart' name='submit' style={{ width: 100 + "%" }} />
-                    <br />
-                </form>
+            <div className='icon-container'>
+                <a href='https://www.instagram.com/wycowley/' target='_blank'>
+                    {" "}
+                    <SiInstagram></SiInstagram>
+                </a>
+                <a href='https://github.com/wycowley' target='_blank'>
+                    {" "}
+                    <SiGithub></SiGithub>
+                </a>
+                <a href='mailto:wycowley@gmail.com' target='_blank'>
+                    <MdOutlineMail></MdOutlineMail>
+                </a>
             </div>
-            <div className='lowDisclaimer'>
-                <p style={{ marginLeft: 1 + "%" }}>Coded by Wyatt Cowley</p>
-            </div>
+            <p className='final-title'>
+                Created by Wyatt Cowley using{" "}
+                <a href='https://reactjs.org/' style={{ color: "black" }} target='_blank'>
+                    React.js
+                </a>
+            </p>
         </div>
     );
 };

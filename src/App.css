@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 body {
     font-family: "Open Sans", sans-serif;
+    --accent: rgb(231, 106, 116);
+}
+
+::selection {
+    background: rgb(240, 181, 185);
+}
+html {
+    scroll-behavior: smooth;
 }

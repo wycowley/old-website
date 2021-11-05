@@ -8,11 +8,12 @@ const Home = () => {
 
             <div className='title-container'>
                 <h1 className='main-title'>Wyatt Cowley</h1>
-                <a className='main-chevron-container'>
+                <a className='main-chevron-container' href='#about'>
                     <img src='chevron.png' className='main-chevron'></img>
                 </a>
             </div>
             <Triangle className='triangle-beneath'></Triangle>
+            <Triangle className='triangle-beneath2'></Triangle>
         </div>
     );
 };
