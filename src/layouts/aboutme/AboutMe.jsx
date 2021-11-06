@@ -9,7 +9,7 @@ const AboutMe = (props) => {
             <BrowserView>
                 <motion.div className='about-section-container' animate={{ opacity: [0, 1] }}>
                     <div className='about-slideshow-container'>
-                        <Slideshow array={["family.jpg", "halfzion.jpg", "star.jpg"]} overlap={0}></Slideshow>
+                        <Slideshow array={["family.jpg", "halfzion.webp", "star.jpg"]} overlap={0}></Slideshow>
                     </div>
                     <div className='about-text-container'>
                         <h1 style={{ textDecoration: "underline", textDecorationStyle: "dotted", textDecorationColor: "rgb(231, 106, 116)" }}>Welcome</h1>
@@ -40,7 +40,7 @@ const AboutMe = (props) => {
                 </motion.div>
                 <motion.div className='about-section-container'>
                     <div className='about-slideshow-container'>
-                        <Slideshow array={["eagle.jpg", "zionind.jpg", "shasta.jpg"]} overlap={0}></Slideshow>
+                        <Slideshow array={["eagle.webp", "zionind.webp", "shasta.jpg"]} overlap={0}></Slideshow>
                     </div>
                     <div className='about-text-container'>
                         <h1 style={{ textDecoration: "underline", textDecorationStyle: "dotted", textDecorationColor: "rgb(231, 106, 116)" }}>Interests</h1>
@@ -83,7 +83,7 @@ const AboutMe = (props) => {
                         </p>
                     </div>
                     <div className='about-slideshow-container full-width-slideshow'>
-                        <Slideshow array={["piano2.png", "chess.jpg", "wakeboard.jpg"]} overlap={0}></Slideshow>
+                        <Slideshow array={["piano2.webp", "chess.jpg", "wakeboard.jpg"]} overlap={0}></Slideshow>
                     </div>
                 </motion.div>
                 <motion.div className='about-section-container no-flex'>
