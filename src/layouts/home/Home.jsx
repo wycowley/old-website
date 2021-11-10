@@ -22,8 +22,10 @@ const Home = () => {
                     <h1 className='main-title'>Wyatt Cowley</h1>
                 </div>
             </MobileView>
-            <Triangle className='triangle-beneath'></Triangle>
-            <Triangle className='triangle-beneath2'></Triangle>
+            <BrowserView>
+                <Triangle className='triangle-beneath'></Triangle>
+                <Triangle className='triangle-beneath2'></Triangle>
+            </BrowserView>
         </div>
     );
 };
