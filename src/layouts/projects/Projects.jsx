@@ -7,13 +7,13 @@ const Projects = (props) => {
     projectData.push({
         name: "Template Manager",
         description: "Create, Edit, Monitor, and Share code templates - all at the touch of a button!  Created for MVHacks 4.5 and won 3rd best overall hack.",
-        src: "folder.png",
+        src: "folder.webp",
         link: "https://www.wyattcowley.com/template-manager/#/dashboard",
     });
     projectData.push({
         name: "Chess Clock",
         description: "Created to learn vue.js, this chess clock was designed to be functional cross platform and aesthetically pleasing.",
-        src: "clock.png",
+        src: "clock.webp",
         link: "https://www.wyattcowley.com/chess-clock-vue/",
     });
     projectData.push({
@@ -26,7 +26,7 @@ const Projects = (props) => {
     projectData.push({
         name: "Sudoku Solver",
         description: "Created in 10th grade with Java.  Solves sudokus and allows for easy input of new puzzles.",
-        src: "sudoku.png",
+        src: "sudoku.webp",
         link: "https://github.com/wycowley/SudokuSolver",
     });
     projectData.push({
@@ -44,7 +44,7 @@ const Projects = (props) => {
     projectData.push({
         name: "Resume",
         description: "My Resume, where you can find some more of my accomplishments.",
-        src: "resume.png",
+        src: "resume.webp",
         link: "./projects/resume.pdf",
     });
 

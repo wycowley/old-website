@@ -10,21 +10,21 @@ const Contact = (props) => {
         <div className='total-contact-div'>
             <Triangle className='triangle-to-contact'></Triangle>
             <div className='icon-container'>
-                <a href='https://www.instagram.com/wycowley/' target='_blank'>
+                <a href='https://www.instagram.com/wycowley/' target='_blank' rel='noopener' aria-label='instagram'>
                     {" "}
                     <SiInstagram></SiInstagram>
                 </a>
-                <a href='https://github.com/wycowley' target='_blank'>
+                <a href='https://github.com/wycowley' target='_blank' rel='noopener' aria-label='github'>
                     {" "}
                     <SiGithub></SiGithub>
                 </a>
-                <a href='mailto:wycowley@gmail.com' target='_blank'>
+                <a href='mailto:wycowley@gmail.com' target='_blank' rel='noopener' aria-label='email'>
                     <MdOutlineMail></MdOutlineMail>
                 </a>
             </div>
             <p className='final-title'>
                 Created by Wyatt Cowley using{" "}
-                <a href='https://reactjs.org/' style={{ color: "black" }} target='_blank'>
+                <a href='https://reactjs.org/' style={{ color: "black" }} target='_blank' rel='noopener'>
                     React.js
                 </a>
             </p>

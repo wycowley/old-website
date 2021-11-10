@@ -8,7 +8,7 @@ const Navbar = (props) => {
     return (
         <>
             <div className='navbar-total'>
-                <img src='main_logo.gif' />
+                <img src='main_logo.gif' alt='logo' />
                 <a style={{ fontWeight: "bold" }} href='#home'>
                     Wyatt Cowley
                 </a>

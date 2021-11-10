@@ -68,6 +68,7 @@
 }
 .always-visible-section img {
     height: 100%;
+    width: auto;
 }
 .always-visible-section h2 {
     margin: 0px;

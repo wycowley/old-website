@@ -43,7 +43,8 @@ const Slideshow = (props) => {
                 transition={{
                     duration: 0.25,
                 }}
-                style={{ zIndex: zIndexes[0] }}></motion.img>
+                style={{ zIndex: zIndexes[0] }}
+                alt='first-slide'></motion.img>
             <motion.img
                 src={props.array[1]}
                 className='slide-img'
@@ -54,7 +55,8 @@ const Slideshow = (props) => {
                 transition={{
                     duration: 0.25,
                 }}
-                style={{ zIndex: zIndexes[1] }}></motion.img>
+                style={{ zIndex: zIndexes[1] }}
+                alt='second-slide'></motion.img>
             <motion.img
                 src={props.array[2]}
                 initial={false}
@@ -65,7 +67,8 @@ const Slideshow = (props) => {
                 transition={{
                     duration: 0.25,
                 }}
-                style={{ zIndex: zIndexes[2] }}></motion.img>
+                style={{ zIndex: zIndexes[2] }}
+                alt='third-slide'></motion.img>
             <SlideshowPill array={pillArray} special={props.special}></SlideshowPill>
         </div>
     );

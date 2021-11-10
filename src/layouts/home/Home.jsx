@@ -6,14 +6,14 @@ import { BrowserView, MobileView, isBrowser, isMobile } from "react-device-detec
 const Home = () => {
     return (
         <div className=' home'>
-            <Slideshow array={["portrait.jpg", "familyHonduras.webp", "wildflowers.webp"]} overlap={0} special={true}></Slideshow>
+            <Slideshow array={["portrait.webp", "familyHonduras.webp", "wildflowers.webp"]} overlap={0} special={true}></Slideshow>
 
             <BrowserView>
                 <div className='title-container'>
                     <h1 className='main-title'>Wyatt Cowley</h1>
 
                     <a className='main-chevron-container' href='#about'>
-                        <img src='chevron.png' className='main-chevron'></img>
+                        <img src='chevron.webp' className='main-chevron' alt='chevron'></img>
                     </a>
                 </div>
             </BrowserView>

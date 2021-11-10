@@ -17,7 +17,7 @@ const IndProject = (props) => {
         <>
             <div onClick={expand} className={isMobile ? "ind-project-container-mobile" : "ind-project-container"} id={showDesc ? (isMobile ? "grow-mobile" : "grow") : ""}>
                 <div className='always-visible-section'>
-                    <img src={props.src}></img>
+                    <img src={props.src} alt='project image'></img>
                     <h2 className={isMobile ? "mobile-project-title" : ""}>{props.name}</h2>
                 </div>
                 {showDesc ? (
