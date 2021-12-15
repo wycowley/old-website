@@ -12,7 +12,7 @@ const AboutMe = (props) => {
                         <Slideshow array={["family.webp", "halfzion.webp", "star.webp"]} overlap={0}></Slideshow>
                     </div>
                     <div className='about-text-container'>
-                        <h1 style={{ textDecoration: "underline", textDecorationStyle: "dotted", textDecorationColor: "rgb(231, 106, 116)" }}>Welcome</h1>
+                        <h1>Welcome</h1>
                         <p>
                             My name is Wyatt Cowley, and I'm a senior in high school. Thanks for stopping by!
                             <br /> <br />
@@ -22,7 +22,7 @@ const AboutMe = (props) => {
                 </motion.div>
                 <motion.div className='about-section-container'>
                     <div className='about-text-container'>
-                        <h1 style={{ textDecoration: "underline", textDecorationStyle: "dotted", textDecorationColor: "rgb(231, 106, 116)" }}>Work Experience</h1>
+                        <h1>Work Experience</h1>
                         <p>
                             I work at{" "}
                             <a href='https://www.peeryacademy.com/' className='link' target='_blank' rel='noopener'>
@@ -43,7 +43,7 @@ const AboutMe = (props) => {
                         <Slideshow array={["eagle.webp", "zionind.webp", "shasta.webp"]} overlap={0}></Slideshow>
                     </div>
                     <div className='about-text-container'>
-                        <h1 style={{ textDecoration: "underline", textDecorationStyle: "dotted", textDecorationColor: "rgb(231, 106, 116)" }}>Interests</h1>
+                        <h1>Interests</h1>
                         <p>
                             At school I play Water Polo and Swimming, and have played for all 4 years, on varsity my Junior and Senior years. <br />
                             <br />I am a member of the Church of Jesus Christ of Latter Day Saints, and attend weekly devotionals and activities with my church and youth congregation. I am also a Eagle Scout, receiving my award in Sophomore year. <br />
@@ -57,7 +57,7 @@ const AboutMe = (props) => {
             <MobileView>
                 <motion.div className='about-section-container no-flex' animate={{ opacity: [0, 1] }}>
                     <div className='about-text-container full-width'>
-                        <h1 style={{ textDecoration: "underline", textDecorationStyle: "dotted", textDecorationColor: "rgb(231, 106, 116)" }}>Welcome</h1>
+                        <h1>Welcome</h1>
                         <p>
                             My name is Wyatt Cowley, and I'm a senior in high school. Thanks for stopping by!
                             <br /> <br />
@@ -70,7 +70,7 @@ const AboutMe = (props) => {
                 </motion.div>
                 <motion.div className='about-section-container no-flex'>
                     <div className='about-text-container full-width'>
-                        <h1 style={{ textDecoration: "underline", textDecorationStyle: "dotted", textDecorationColor: "rgb(231, 106, 116)" }}>Work Experience</h1>
+                        <h1>Work Experience</h1>
                         <p>
                             I work at{" "}
                             <a href='https://www.peeryacademy.com/' className='link' target='_blank'>
@@ -88,7 +88,7 @@ const AboutMe = (props) => {
                 </motion.div>
                 <motion.div className='about-section-container no-flex'>
                     <div className='about-text-container full-width'>
-                        <h1 style={{ textDecoration: "underline", textDecorationStyle: "dotted", textDecorationColor: "rgb(231, 106, 116)" }}>Interests</h1>
+                        <h1>Interests</h1>
                         <p>
                             At school I play Water Polo and Swimming, and have played for all 4 years, on varsity my Junior and Senior years. <br />
                             <br />I am a member of the Church of Jesus Christ of Latter Day Saints, and attend weekly devotionals and activities with my church and youth congregation. I am also a Eagle Scout, receiving my award in Sophomore year. <br />
