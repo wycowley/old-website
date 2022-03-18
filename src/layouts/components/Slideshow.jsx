@@ -9,7 +9,6 @@ const Slideshow = (props) => {
     const [zIndexes, setZ] = useState([2, 1, 3]);
     const [pillArray, setPillArray] = useState(["white", "rgba(255, 255, 255, .5)", "rgba(255, 255, 255, .5)"]);
     function shiftTransition() {
-        console.log("Things are going down");
         if (thirdRotate == -100) {
             setFirstRotate(-100);
             setSecondRotate(0);
@@ -33,8 +32,7 @@ const Slideshow = (props) => {
 
     return (
         <div className='actual-img-container' onClick={shiftTransition}>
-            <motion.img
-                src={props.array[0]}
+            <motion.div
                 className='slide-img'
                 animate={{
                     x: firstRotate + "%",
@@ -43,9 +41,9 @@ const Slideshow = (props) => {
                 transition={{
                     duration: 0.25,
                 }}
-                style={{ zIndex: zIndexes[0] }}
-                alt='first-slide'></motion.img>
-            <motion.img
+                style={{ zIndex: zIndexes[0], backgroundImage: "url(" + props.array[0] + ")" }}
+                alt='first-slide'></motion.div>
+            <motion.div
                 src={props.array[1]}
                 className='slide-img'
                 initial={false}
@@ -55,9 +53,9 @@ const Slideshow = (props) => {
                 transition={{
                     duration: 0.25,
                 }}
-                style={{ zIndex: zIndexes[1] }}
-                alt='second-slide'></motion.img>
-            <motion.img
+                style={{ zIndex: zIndexes[1], backgroundImage: "url(" + props.array[1] + ")" }}
+                alt='second-slide'></motion.div>
+            <motion.div
                 src={props.array[2]}
                 initial={false}
                 className='slide-img'
@@ -67,8 +65,8 @@ const Slideshow = (props) => {
                 transition={{
                     duration: 0.25,
                 }}
-                style={{ zIndex: zIndexes[2] }}
-                alt='third-slide'></motion.img>
+                style={{ zIndex: zIndexes[2], backgroundImage: "url(" + props.array[2] + ")" }}
+                alt='third-slide'></motion.div>
             <SlideshowPill array={pillArray} special={props.special}></SlideshowPill>
         </div>
     );

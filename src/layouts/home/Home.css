@@ -57,6 +57,8 @@
     object-fit: cover;
     transform-origin: bottom left;
     position: absolute;
+    background-size: cover;
+    background-position: center center;
 
     transition: 0.125s transform;
     top: 0%;
