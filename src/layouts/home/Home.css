@@ -6,7 +6,7 @@
     height: 105vh;
     background-color: rgb(255, 255, 255);
 
-    width: 100vw;
+    width: 100%; /* this one change gets rid of scrollbars on windows lol */
 }
 .title-container {
     /* width: 50%; */
