@@ -46,7 +46,7 @@ const Projects = (props) => {
             </div>
             <div className='project-containers'>
                 {projectData.map((data) => {
-                    return <IndProject name={data.name} description={data.description} src={data.src} link={data.link}></IndProject>;
+                    return <IndProject name={data.name} description={data.description} src={data.src} link={data.link} key={data.name}></IndProject>;
                 })}
             </div>
             <p style={{ textAlign: "center" }}>More to come soon!</p>

@@ -5,11 +5,6 @@ import { BrowserView, MobileView, isBrowser, isMobile } from "react-device-detec
 const IndProject = (props) => {
     const [showDesc, setDesc] = useState(false);
     // rdd.isMobile = true;
-    useEffect(() => {
-        console.log(props.name);
-        console.log(props.description);
-        console.log(props.src);
-    }, [isMobile]);
     function expand() {
         setDesc(!showDesc);
     }

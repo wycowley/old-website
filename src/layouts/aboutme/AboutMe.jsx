@@ -28,9 +28,9 @@ const AboutMe = (props) => {
                             <a href='https://www.peeryacademy.com/' className='link' target='_blank' rel='noopener'>
                                 Peery Piano Academy
                             </a>{" "}
-                            as one of their Lead Guides, teaching piano to 5+ students. I have played piano for over ten years and have performed pieces such as Sonate Pathetique and Aufschwung. Check out my portfolio{" "}
+                            as one of their Lead Guides, teaching piano to 5+ students. I have played piano for over ten years and have performed pieces such as Sonate Pathetique and Aufschwung. Check out{" "}
                             <a href='https://wyattcowley.com/music/' className='link' target='_blank' rel='noopener'>
-                                here
+                                my portfolio here
                             </a>
                             !<br />
                             <br /> I lifeguard and teach swim lessons at my local pool. This year, I've started to lead shifts and open/close the pool.
@@ -81,9 +81,9 @@ const AboutMe = (props) => {
                             <a href='https://www.peeryacademy.com/' className='link' target='_blank'>
                                 Peery Piano Academy
                             </a>{" "}
-                            as one of their Lead Guides, teaching piano to 5+ students. I have played piano for over ten years and have performed pieces such as Sonate Pathetique and Aufschwung. Check out my portfolio{" "}
+                            as one of their Lead Guides, teaching piano to 5+ students. I have played piano for over ten years and have performed pieces such as Sonate Pathetique and Aufschwung. Check out{" "}
                             <a href='https://wyattcowley.com/music/' className='link' target='_blank' rel='noopener'>
-                                here
+                                my portfolio here
                             </a>
                             !<br />
                             <br /> I lifeguard and teach swim lessons at my local pool. This year, I've started to lead shifts and open/close the pool.
