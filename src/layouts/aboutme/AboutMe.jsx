@@ -14,9 +14,9 @@ const AboutMe = (props) => {
                     <div className='about-text-container'>
                         <h1>Welcome</h1>
                         <p>
-                            My name is Wyatt Cowley, and I'm a senior in high school. Thanks for stopping by!
+                            My name is Wyatt Cowley, and I'm an incoming freshman to BYU planning to study Computer Science. Thanks for stopping by!
                             <br /> <br />
-                            In my family, I have two siblings, Cyrus and Tessa, my dog, Kody, and my two parents. After graduating, I plan on attending college, and I'm in the application process right now!
+                            In my family, I have two siblings, Cyrus and Tessa, my dog (Kody), and my two parents.
                         </p>
                     </div>
                 </div>
@@ -28,14 +28,14 @@ const AboutMe = (props) => {
                             <a href='https://www.peeryacademy.com/' className='link' target='_blank' rel='noopener'>
                                 Peery Piano Academy
                             </a>{" "}
-                            as one of their Lead Guides, teaching piano to 5+ students. I have played piano for over ten years and have performed pieces such as Sonate Pathetique and Aufschwung. Check out{" "}
+                            as one of their Lead Guides, teaching piano to 5+ students. I have played piano for over ten years and have performed pieces such as Sonate Pathetique and Liebestraum. Check out{" "}
                             <a href='https://wyattcowley.com/music/' className='link' target='_blank' rel='noopener'>
                                 my portfolio here
                             </a>
                             !<br />
-                            <br /> I lifeguard and teach swim lessons at my local pool. This year, I've started to lead shifts and open/close the pool.
+                            <br /> During the summer, I lifeguard and teach swim lessons at my local pool.
                             <br />
-                            <br /> I also participate and lead a couple of clubs at my high school. I am the President of the Practical Skills Club, and am part of the CS and Business clubs.
+                            <br /> I participated and led a couple of clubs in high school. I was the President of the Practical Skills Club, and was part of the CS and Business clubs on campus.
                         </p>
                     </div>
                     <div className='about-slideshow-container'>
