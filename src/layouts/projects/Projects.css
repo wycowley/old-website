@@ -2,11 +2,11 @@ html {
     --accent-bg-color: rgb(236, 236, 236);
 }
 .triangle-to-projects {
-    height: 5%;
+    height: 8%;
     width: 100%;
     fill: var(--accent-bg-color);
     position: relative;
-    top: calc(-5% + 1px);
+    top: calc(-8%);
     z-index: 0;
     /* background-color: white; */
 }

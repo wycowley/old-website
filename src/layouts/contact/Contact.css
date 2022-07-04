@@ -1,16 +1,16 @@
 .triangle-to-contact {
-    height: 5vh;
+    height: 8vh;
     width: 100%;
-    fill: rgb(231, 106, 116);
+    fill: var(--accent);
     z-index: 0;
 
     position: relative;
-    top: calc(-5vh + 1px);
+    top: -8vh;
     /* background-color: white; */
 }
 .total-contact-div {
     height: auto;
-    background-color: rgb(231, 106, 116);
+    background-color: var(--accent);
 }
 .icon-container {
     width: 80%;

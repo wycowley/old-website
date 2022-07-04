@@ -6,7 +6,7 @@ import { BrowserView, MobileView, isBrowser, isMobile } from "react-device-detec
 const Home = () => {
     return (
         <div className=' home'>
-            <Slideshow array={["portrait.webp", "familyHonduras.webp", "wildflowers.webp"]} overlap={0} special={true}></Slideshow>
+            <Slideshow array={["yukon.webp", "familyHonduras.webp", "portrait.webp"]} overlap={0} special={true}></Slideshow>
 
             <BrowserView>
                 <div className='title-container'>
